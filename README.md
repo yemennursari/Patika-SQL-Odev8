@@ -7,6 +7,7 @@ CREATE TABLE employee(
 	bitrhday(DATE),
 	email VARCHAR(100)
 )
+<br />
 --2.Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
 insert into employee (id, name, birthday, email) values (1, 'Lorry', '1987-03-07', 'lwoolhouse0@tiny.cc');
 insert into employee (id, name, birthday, email) values (2, 'Prudence', '1975-10-04', null);
@@ -58,6 +59,7 @@ insert into employee (id, name, birthday, email) values (47, 'Nixie', '1980-02-1
 insert into employee (id, name, birthday, email) values (48, 'Lib', '1999-03-24', null);
 insert into employee (id, name, birthday, email) values (49, 'Lock', '1970-12-16', null);
 insert into employee (id, name, birthday, email) values (50, 'Edy', '1970-04-03', 'ethomel1d@washingtonpost.com');
+<br />
 --3.Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
 UPDATE employee
 	SET name = 'Otto Meier',
@@ -88,6 +90,7 @@ UPDATE employee
 	    birthday = '1987-02-01',
 		email = 'jackA@gmail.com'
 WHERE id = 21;
+<br />
 --4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 DELETE FROM employee
 WHERE id IN (3,5,7,13,21)
