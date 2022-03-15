@@ -1,6 +1,6 @@
 # Patika-SQL-Odev8
 --1.test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
-
+<br />
 CREATE TABLE employee(
 	id INTEGER,
 	name VARCHAR(50),
@@ -10,6 +10,7 @@ CREATE TABLE employee(
 <br />
 <br />
 --2.Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+<br />
 <br />insert into employee (id, name, birthday, email) values (1, 'Lorry', '1987-03-07', 'lwoolhouse0@tiny.cc');
 <br />insert into employee (id, name, birthday, email) values (2, 'Prudence', '1975-10-04', null);
 <br />insert into employee (id, name, birthday, email) values (3, 'Randell', '1978-05-26', 'rphebey2@vinaora.com');
@@ -63,6 +64,7 @@ CREATE TABLE employee(
 <br />
 <br />
 --3.Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+<br />
 UPDATE employee
 	SET name = 'Otto Meier',
 	    birthday = '1987-02-01',
@@ -95,6 +97,7 @@ WHERE id = 21;
 <br />
 <br />
 --4. Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+<br />
 DELETE FROM employee
 WHERE id IN (3,5,7,13,21)
 RETURNING *;
